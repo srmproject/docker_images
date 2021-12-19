@@ -9,6 +9,7 @@ echo "git clone is done"
 dir_name=$(dirname "${FILEPATH}")
 file_name=$(dirname "${FILEPATH}")
 
-cd ${git_workspace}/${dirname} && sh ${file_name}
+# cd ${git_workspace}/${dirname} && sh ${file_name}
+sh ${git_workspace}/${FILEPATH}
 
 echo "execute file is done"
