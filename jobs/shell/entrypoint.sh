@@ -2,7 +2,7 @@
 
 set -e
 
-git clone ${GIT_URL} workspace
+git clone ${GIT_URL} -b ${GIT_BRANCH} workspace
 cd workspace
 
 # change dir
