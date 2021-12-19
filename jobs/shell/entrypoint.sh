@@ -2,14 +2,15 @@
 
 set -e
 
-git clone ${GIT_URL} -b ${GIT_BRANCH} workspace
+git_workspace="workspace"
+git clone ${GIT_URL} -b ${GIT_BRANCH} ${git_workspace}
 echo "git clone is done"
 
 # change dir
 dir_name=$(dirname "${FILEPATH}")
 file_name=$(dirname "${FILEPATH}")
 
-cd workspace
+cd $(${git_workspace} "$0")
 echo "current: location"
 pwd
 
