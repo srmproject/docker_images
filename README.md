@@ -1,2 +1,2 @@
 # 목차
-* [job실행로그](./jobs/Readme.md)
+* [job실행](./jobs/Readme.md)
